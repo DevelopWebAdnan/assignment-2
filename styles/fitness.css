@@ -7,6 +7,11 @@
 }
 
 /* shared styles */
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}
+
 .display-flex{
     display: flex;
 }
@@ -19,7 +24,7 @@
 /* header styles */
 .header{
     
-    
+    padding-top: 50px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 
@@ -64,11 +69,21 @@ padding: 5px;
 
 .hamburger-menu{
     display: none;
+    color: white;
 }
 
+/* banner related styles */
+.banner-title{}
+
 /* responsive mobile device */
-@media screen and (max-width: 576){
+@media screen and (max-width: 576px){
+    .navbar{
+        padding: 0px 20px;
+    }
     .nav-items{
         display: none;
+    }
+    .hamburger-menu{
+        display: block;
     }
 }
