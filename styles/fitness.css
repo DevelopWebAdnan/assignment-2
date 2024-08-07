@@ -21,7 +21,12 @@
     background-color: rgb(230, 83, 60);
 
 } */
-
+.nav-title{
+    color:rgb(230, 83, 60);
+    font-size: 2.25em;
+    font-weight: 800;
+    font-style: italic;
+}
 .btn-primary{
     padding: 16px 40px;
     color: white;
@@ -63,12 +68,7 @@ margin-top: 30px;
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
-    color:rgb(230, 83, 60);
-    font-size: 2.25em;
-    font-weight: 800;
-    font-style: italic;
-}
+
 .nav-items{
     list-style: none;
     box-sizing: border-box;
@@ -256,6 +256,11 @@ main section{
 .trainer-description p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875em;
+}
+
+/* footer styles */
+.footer{
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* responsive mobile device */
