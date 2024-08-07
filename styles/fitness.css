@@ -223,6 +223,61 @@ main section{
     border-radius: 18px;
 }
 
+/* bmi section styles */
+.bmi-columns{
+    justify-content: space-between;
+    gap: 175px;
+}
+.bmi-column-1, .bmi-column-2{
+    width: 50%;
+}
+.bmi .section-title-content{
+    text-align: left;
+}
+.column-title{
+    font-size: 1.75em;
+    color: white;
+    font-weight: 900;
+}
+.bmi-column-1 .column-title{
+    margin-bottom: 50px;
+}
+.bmi-chart table{
+    width: 320px;
+}
+.bmi-chart table, tr, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+.bmi-chart th, td{
+    padding: 10px 15px;
+}
+.bmi-chart th{
+    font-weight: 500;
+    color: white;
+}
+.bmi-chart td{
+    font-size: .875em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-form-container{
+    border: 2px solid blue;
+    /* flex-direction: column; */
+}
+.bmi-form-container div{
+    border: 1px solid green;
+    /* width: 40%; */
+    margin-top: 10px;
+}
+.bmi-form-container input, select{
+    border: 8px;
+    padding: 10px 20px;
+    /* width: 45%; */
+}
+.activity-factor{
+    margin-top: 10px;
+}
 /* team section styles */
 .team-container{
     display: grid;
