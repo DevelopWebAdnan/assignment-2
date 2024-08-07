@@ -33,6 +33,22 @@
 background: rgb(230, 83, 60);
 }
 
+.section-title-content{
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title{
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+}
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875em;
+}
+
 /* header styles */
 .header{
     
@@ -110,8 +126,9 @@ padding: 5px;
     color: rgba(255, 255, 255, 0.5);
     margin: 28px 0;
 }
-.banner-content button{
-    margin-right: 10px;
+.btn-container{
+    display: flex;
+    gap: 14px;
 }
 
 .banner-image img{
@@ -159,6 +176,39 @@ padding: 5px;
 .banner-ad-2 .ad-title{
     font-size: 2.5em;
 }
+
+/* main styles */
+main{
+    background: rgb(185, 185, 185);
+}
+main section{
+    max-width: 1050px;
+    margin: 100px auto;
+}
+
+/* change section styles */
+.habits-container{
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.habit{
+    width: 230px;
+    text-align: center;
+}
+.habit img{
+    border-radius: 50%;
+}
+.habit-title{
+    color: white;
+    font-size: 1.125em;
+    font-weight: 600;
+}
+.habit-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875em;
+}
+
 /* responsive mobile device */
 @media screen and (max-width: 576px){
     .navbar{
@@ -170,9 +220,15 @@ padding: 5px;
     .hamburger-menu{
         display: block;
     }
-    .banner{
+    main section{
+        margin: 0 auto;
+    }
+    .banner, .habits-container{
         flex-direction: column;
-        margin: 50px 20px 0px;
+    }
+    .banner{
+        margin: 50px 20px;
+        margin-bottom: 0px;
         gap: 50px;
     }
     .banner > div{
