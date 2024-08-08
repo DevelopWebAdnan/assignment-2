@@ -30,6 +30,14 @@ background: rgb(230, 83, 60);
 margin-top: 30px;
 }
 
+.change, .run, .team, .bmi-columns{
+    max-width: 1050px;
+    margin: 90px auto;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+    border: 2px solid lightblue;
+}
+
 .section-title-content{
     max-width: 670px;
     margin: 0 auto;
@@ -57,7 +65,7 @@ margin-top: 30px;
 /* navbar related styles */
 .navbar{
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 60px auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -98,7 +106,7 @@ gap: 50px;
     align-items: center;
     gap: 170px;
     max-width: 1050px;
-    margin: 30px auto 0;
+    margin: 0 auto;
 }
 .banner > div{
     width: 50%;
@@ -171,14 +179,6 @@ gap: 50px;
 main{
     background: rgb(185, 185, 185);
 }
-/* main section{ */
-main .run, .team, .bmi-columns{
-    max-width: 1050px;
-    margin: 90px auto;
-    /* padding-top: 100px; */
-    /* padding-bottom: 100px; */
-    border: 2px solid lightblue;
-}
 
 /* change section styles */
 .habits-container{
@@ -222,7 +222,7 @@ main .run, .team, .bmi-columns{
     margin-bottom: 10px;
     
 }
-.run-container .section-title-content .section-title, .run-container .section-title-content .section-description{
+.run-container .section-title, .run-container .section-description{
     color: white;
 }
 .run-container > div{
@@ -234,18 +234,25 @@ main .run, .team, .bmi-columns{
 }
 
 /* bmi section styles */
+
 .bmi .section-title-content{
     text-align: left;
     /* margin-bottom: 90px; */
-   
+    
 
 }
+.bmi-columns-container{
+    background: rgb(34, 34, 34);
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
 
+}
 .bmi-columns{
     justify-content: space-between;
     gap: 175px;
     /* max-width: 100%; */
-    background: rgb(34, 34, 34);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .bmi-column-1, .bmi-column-2{
     width: 50%;
@@ -280,13 +287,13 @@ main .run, .team, .bmi-columns{
     
 }
 
-.calculate-bmi-title-container{
+.bmi-column-2 .title-container{
     margin-bottom: 30px;
 }
-form{
-    /* border: 2px solid blue; */
-    
+.bmi-column-2 .section-description{
+    color: white;
 }
+/* form{border: 2px solid blue;} */
 form div{
     margin-top: 10px;
     justify-content: space-between;
@@ -404,25 +411,32 @@ form .activity-factor{
 
 /* responsive mobile device */
 @media screen and (max-width: 576px){
-
+    .navbar{
+        margin: 50px 20px;
+    }
     .nav-items{
         display: none;
     }
     .hamburger-menu{
         display: block;
     }
-    main section{
-        /* padding-top: 0; */
-        padding-bottom: 66px;
+    /* main section{padding-top: 0;padding-bottom: 66px;} */
+    .run, .team{
+        /* max-width: 1050px; */
+        margin: 70px auto;
+        /* padding-top: 100px; */
+        /* padding-bottom: 100px; */
+        /* border: 2px solid lightblue; */
     }
     .banner, .habits-container, .run-container, .bmi-columns, .footer-container, .links-container{
         flex-direction: column;
     }
-    .navbar, .banner, .run-container, .bmi, .footer-container{
-        margin: 0 20px;
+    .banner, .change, .run-container, .bmi .section-title-content, .team, .footer-container{
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .banner, .team{
-        margin-top: 50px;
+    .change{
+        margin-top: 0px;
     }
     .banner, .bmi-columns{
         gap: 50px;
@@ -442,6 +456,12 @@ form .activity-factor{
     }
     .bmi .section-title-content{
         text-align: center;
+    }
+    .bmi-columns-container{
+        padding: 0 20px 0 20px;
+    }
+    .bmi-columns{
+        margin: 30px auto;
     }
     .team-container{
         grid-template-columns: 1fr;
