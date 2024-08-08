@@ -37,14 +37,15 @@ margin-top: 30px;
     margin-bottom: 60px;
 }
 .section-title{
-    color: white;
     font-size: 3em;
     font-weight: 900;
+    color: black;
 }
 .section-description{
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
     font-size: .875em;
     margin-top: 14px;
+    color: black;
 }
 
 /* header styles */
@@ -114,6 +115,7 @@ gap: 50px;
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     margin: 28px 0;
+    color: black;
 }
 .btn-container{
     display: flex;
@@ -170,11 +172,12 @@ main{
     background: rgb(185, 185, 185);
 }
 /* main section{ */
-main .change, .run{
+main .run, .team, .bmi-columns{
     max-width: 1050px;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin: 90px auto;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+    border: 2px solid lightblue;
 }
 
 /* change section styles */
@@ -189,15 +192,19 @@ main .change, .run{
 }
 .habit img{
     border-radius: 50%;
+    border: 1px solid lightblue;
 }
 .habit-title{
-    color: white;
+    /* color: white; */
     font-size: 1.125em;
     font-weight: 600;
+    color: blue;
+    margin-top: 28px;
 }
 .habit-description{
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
     font-size: 0.875em;
+    color: blue;
 }
 
 /* run section starts here */
@@ -213,10 +220,13 @@ main .change, .run{
     max-width: 440px;
     text-align: left;
     margin-bottom: 10px;
+    
+}
+.run-container .section-title-content .section-title, .run-container .section-title-content .section-description{
+    color: white;
 }
 .run-container > div{
     width: 50%;
-    
 }
 .run-image img{
     width: 100%;
@@ -226,17 +236,16 @@ main .change, .run{
 /* bmi section styles */
 .bmi .section-title-content{
     text-align: left;
-    margin-bottom: 90px;
-}
-.bmi-columns-container{
-    background: rgb(34, 34, 34);
-    width: 100%;
+    /* margin-bottom: 90px; */
+   
 
 }
+
 .bmi-columns{
     justify-content: space-between;
     gap: 175px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    background: rgb(34, 34, 34);
 }
 .bmi-column-1, .bmi-column-2{
     width: 50%;
@@ -255,8 +264,7 @@ main .change, .run{
     border-collapse: collapse;
 }
 .bmi-chart table, tr, th, td{
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
-    border: 1px solid lightblue;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     
 }
 .bmi-chart th, td{
@@ -268,30 +276,29 @@ main .change, .run{
 }
 .bmi-chart td{
     font-size: .875em;
-    /* color: rgba(255, 255, 255, 0.5); */
-    color: blue;
+    color: rgba(255, 255, 255, 0.5);
+    
 }
 
 .calculate-bmi-title-container{
     margin-bottom: 30px;
 }
 form{
-    border: 2px solid blue;
-    /* flex-direction: column; */
+    /* border: 2px solid blue; */
+    
 }
 form div{
-    border: 1px solid green;
-    /* width: 40%; */
     margin-top: 10px;
     justify-content: space-between;
     gap: 10px;
 }
-form div input, select{
-    border: 8px;
+form div input, form div select, form .activity-factor{
+    border-radius: 8px;
     padding: 10px 20px;
     width: calc(50% - 50px);
-    border: 2px solid yellow;
-    
+    border: none;
+    display: block;
+    /* color: rgba(255, 255, 255, 0.6); */
 }
 form .activity-factor{
     margin-top: 10px;
@@ -346,7 +353,7 @@ form .activity-factor{
     gap: 100px;
     /* border: 2px solid rgba(255, 255, 255, 0.1); */
     border-bottom: 2px solid black;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 80px;
 }
 .footer-column{
