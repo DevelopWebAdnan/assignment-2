@@ -27,10 +27,9 @@ background: rgb(230, 83, 60);
 margin-top: 30px;
 }
 
-.change, .run, .team, .bmi-columns, .plan-cards-container{
+.change, .run, .team, .bmi-columns, .plan-cards{
     max-width: 1050px;
     margin: 90px auto;
-    border: 2px solid lightblue;
 }
 
 .section-title-content{
@@ -240,7 +239,6 @@ main{
 .bmi-columns{
     justify-content: space-between;
     gap: 175px;
-    /* max-width: 100%; */
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -282,7 +280,7 @@ main{
 .bmi-column-2 .section-description{
     color: white;
 }
-/* form{border: 2px solid blue;} */
+
 form div{
     margin-top: 10px;
     justify-content: space-between;
@@ -341,17 +339,19 @@ form .activity-factor{
 .plan .section-title-content{
     max-width: 440px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .plan-cards-container{
     background: rgb(34, 34, 34);
-    padding: 30px;
+    
+   
 }
 .plan-cards{
     justify-content: space-around;
     gap: 20px;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .plan-cards div{
     text-align: center;
@@ -474,13 +474,9 @@ form .activity-factor{
     .hamburger-menu{
         display: block;
     }
-    /* main section{padding-top: 0;padding-bottom: 66px;} */
-    .run, .team, .plan-cards-container{
-        /* max-width: 1050px; */
+
+    .run, .team{
         margin: 70px auto;
-        /* padding-top: 100px; */
-        /* padding-bottom: 100px; */
-        /* border: 2px solid lightblue; */
     }
     .banner, .habits-container, .run-container, .bmi-columns, .plan-cards, .footer-container, .links-container{
         flex-direction: column;
@@ -514,7 +510,7 @@ form .activity-factor{
     .bmi-columns-container{
         padding: 0 20px 0 20px;
     }
-    .bmi-columns{
+    .bmi-columns, .plan-cards{
         margin: 30px auto;
     }
     .team-container{
